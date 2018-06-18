@@ -1,0 +1,53 @@
+let numero1 = Math.floor(Math.random() * 11);
+let numero2 = Math.floor(Math.random() * 51);
+let numero3 = Math.floor(Math.random() * 22) + 15; 
+
+console.log(numero1, numero2, numero3);
+
+
+//function sorteio(minimo, maximo){
+  //  let aleatorio = Math.floor(Math.random() * (maximo - minimo + 1)) + minimo;
+    //return aleatorio;
+//}
+
+
+
+
+////////////////
+
+
+
+function sorteio(minimo=0, maximo=10){
+    let aleatorio = Math.floor(Math.random() * (maximo - minimo + 1)) + minimo;
+    return aleatorio;
+}
+
+
+let numero1 = sorteio();
+let numero2 = sorteio(0,50);
+let numero3 = sorteio(15,35); 
+
+console.log(numero1, numero2, numero3);
+
+
+////////'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/
+
+
+function sorteio(minimo=0, maximo=10){
+    let aleatorio = Math.floor(Math.random() * (maximo - minimo + 1)) + minimo;
+    return aleatorio;
+}
+
+
+let lista = ["João", "Maria", "José", "Jucilei"];
+
+let i = 0;
+while(i < 10){
+console.log(lista[sorteio(0,lista.length-1)]);
+i++;
+}
+
+
+//'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'/'//''
+
+
